@@ -19,7 +19,11 @@ const TaskListItem = ({ date, task }: { date: Date; task: string }) => {
           <ListItemText primary={task} />
         </Box>
         <Box sx={{ display: "block" }}>
-          <ListItemIcon>
+          <ListItemIcon
+            onClick={() => {
+              alert("hihi");
+            }}
+          >
             <EditCalendarIcon sx={{ color: "blue" }} />
           </ListItemIcon>
           <ListItemIcon>
